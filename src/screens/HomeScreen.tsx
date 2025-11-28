@@ -127,6 +127,7 @@ const leafletTemplate = (
 
 const HomeScreen = () => {
   const { user, logout, token } = useAuth();
+  
   const [location, setLocation] = useState<Coordinate | null>(null);
   const [trackedLocations, setTrackedLocations] = useState<TrackedLocations>({ dummy: DUMMY_USER });
   const [routeCoords, setRouteCoords] = useState<Coordinate[]>([]);
